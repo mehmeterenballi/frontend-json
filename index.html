@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Css Assets -->
+    <link rel="stylesheet" href="assets/css/freemode.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/popup.css">
+    <link rel="stylesheet" href="assets/css/slider_navigation.css">
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <title>Segmentify E-Ticaret</title>
+
+    <script src="assets/js/escapeChars.js"></script>
+
+</head>
+
+<body>
+
+    <main class="bg-white g-0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h4 class="d-flex justify-content-start ps-4"><strong>Sizin İçin Seçtiklerimiz</strong></h4>
+                </div>
+            </div>
+            <div class="row" style="margin-left: 0px;">
+                <div class="col-lg-3" style="padding-left: 0px;">
+                    <div class="list-group align-items-start flex-lg-column flex-row align-items-center me-3"
+                        id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="list-group-item border-0 my-auto text-secondary d-flex align-items-center active"
+                            id="v-pills-recommended-tab" data-bs-toggle="pill" data-bs-target="#v-pills-recommended"
+                            type="button" role="tab" aria-controls="v-pills-recommended" aria-selected="true">
+                            <div class="blueColon d-flex align-items-center"></div>
+                            <div class="transparent mx-1 d-flex align-items-center">
+                                <p class="listTag px-3 mb-2 d-flex align-items-center" style="visibility: visible;">
+                                    <strong class="listTagStrong">Size
+                                        Özel</strong>
+                                </p>
+                            </div>
+                        </button>
+                        <button class="list-group-item border-0 my-auto text-secondary d-flex align-items-center"
+                            id="v-pills-repairment-tab" data-bs-toggle="pill" data-bs-target="#v-pills-repairment"
+                            type="button" role="tab" aria-controls="v-pills-repairment" aria-selected="false">
+                            <div class="blueColon d-flex align-items-center"></div>
+                            <div class="transparent mx-1 d-flex align-items-center">
+                                <p class="listTag px-3 mb-2" style="visibility: visible;"><strong
+                                        class="listTagStrong">Tamir,
+                                        Tadilat
+                                        Gereçleri</strong></p>
+                            </div>
+                        </button>
+                        <button class="list-group-item border-0 my-auto text-secondary d-flex align-items-center"
+                            id="v-pills-furniture-tab" data-bs-toggle="pill" data-bs-target="#v-pills-furniture"
+                            type="button" role="tab" aria-controls="v-pills-furniture" aria-selected="false">
+                            <div class="blueColon d-flex align-items-center"></div>
+                            <div class="transparent mx-1 d-flex align-items-center">
+                                <p class="listTag px-3 mb-2" style="visibility: visible;"><strong
+                                        class="listTagStrong">Mobilya</strong></p>
+                            </div>
+                        </button>
+                        <button class="list-group-item border-0 my-auto text-secondary d-flex align-items-center"
+                            id="v-pills-health-tab" data-bs-toggle="pill" data-bs-target="#v-pills-health" type="button"
+                            role="tab" aria-controls="v-pills-health" aria-selected="false">
+                            <div class="blueColon d-flex align-items-center"></div>
+                            <div class="transparent mx-1 d-flex align-items-center">
+                                <p class="listTag px-3 mb-2 d-flex align-items-center" style="visibility: visible;">
+                                    <strong class="listTagStrong">Sağlık,
+                                        Medikal</strong>
+                                </p>
+                            </div>
+                        </button>
+                        <button class="list-group-item border-0 my-auto text-secondary d-flex align-items-center"
+                            id="v-pills-laptop-tab" data-bs-toggle="pill" data-bs-target="#v-pills-laptop" type="button"
+                            role="tab" aria-controls="v-pills-laptop" aria-selected="false">
+                            <div class="blueColon d-flex align-items-center"></div>
+                            <div class="transparent mx-1 d-flex align-items-center">
+                                <p class="listTag px-3 mb-2" style="visibility: visible;"><strong
+                                        class="listTagStrong">Dizüstü
+                                        Bilgisayar
+                                        (Laptop)</strong></p>
+                            </div>
+                        </button>
+                        <button class="list-group-item border-0 my-auto text-secondary d-flex align-items-center"
+                            id="v-pills-heating-tab" data-bs-toggle="pill" data-bs-target="#v-pills-heating"
+                            type="button" role="tab" aria-controls="v-pills-heating" aria-selected="false">
+                            <div class="blueColon d-flex align-items-center"></div>
+                            <div class="transparent mx-1 d-flex align-items-center">
+                                <p class="listTag px-3 mb-2" style="visibility: visible;"><strong
+                                        class="listTagStrong">Isıtma,
+                                        Soğutma
+                                        Sistemi</strong></p>
+                            </div>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+
+                        <div class="tab-pane fade show active" id="v-pills-recommended" role="tabpanel"
+                            aria-labelledby="v-pills-recommended-tab">
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper" id="recommended">
+                                    <script src="assets/js/fetchJson/fetchRecommended.js"></script>
+                                </div>
+                                <div class="nextContainer">
+                                    <div class="next swiper-button-next"></div>
+                                </div>
+                                <div class="prevContainer">
+                                    <div class="prev swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="swiper-pagination"></div> -->
+
+
+                        <!-- <script src="assets/js/fetchJson/fetchRecommended.js"></script> -->
+
+
+                        <div class="tab-pane fade" id="v-pills-repairment" role="tabpanel"
+                            aria-labelledby="v-pills-repairment-tab">
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper" id="repairment">
+                                    <script src="assets/js/fetchJson/fetchRepairment.js"></script>
+                                </div>
+                                <div class="nextContainer">
+                                    <div class="next swiper-button-next"></div>
+                                </div>
+                                <div class="prevContainer">
+                                    <div class="prev swiper-button-prev"></div>
+                                </div>
+                            </div>
+
+
+                            <!-- <div class="swiper-pagination"></div> -->
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-furniture" role="tabpanel"
+                            aria-labelledby="v-pills-furniture-tab">
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper" id="furniture">
+                                    <script src="assets/js/fetchJson/fetchFurniture.js"></script>
+                                </div>
+                                <div class="nextContainer">
+                                    <div class="next swiper-button-next"></div>
+                                </div>
+                                <div class="prevContainer">
+                                    <div class="prev swiper-button-prev"></div>
+                                </div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-health" role="tabpanel"
+                            aria-labelledby="v-pills-health-tab">
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper" id="medicals">
+                                    <script src="assets/js/fetchJson/fetchMedicals.js"></script>
+                                </div>
+                                <div class="nextContainer">
+                                    <div class="next swiper-button-next"></div>
+                                </div>
+                                <div class="prevContainer">
+                                    <div class="prev swiper-button-prev"></div>
+                                </div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="v-pills-laptop" role="tabpanel"
+                            aria-labelledby="v-pills-laptop-tab">
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper" id="laptop">
+                                    <script src="assets/js/fetchJson/fetchLaptop.js"></script>
+                                </div>
+                                <div class="nextContainer">
+                                    <div class="next swiper-button-next"></div>
+                                </div>
+                                <div class="prevContainer">
+                                    <div class="prev swiper-button-prev"></div>
+                                </div>
+                                <!-- <div class="swiper-pagination"></div> -->
+                            </div>
+                        </div>
+
+
+
+                        <div class="tab-pane fade" id="v-pills-heating" role="tabpanel"
+                            aria-labelledby="v-pills-heating-tab">
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper" id="heatingSys">
+                                    <script src="assets/js/fetchJson/fetchHeatingSys.js"></script>
+                                </div>
+                                <div class="nextContainer">
+                                    <div class="next swiper-button-next"></div>
+                                </div>
+                                <div class="prevContainer">
+                                    <div class="prev swiper-button-prev"></div>
+                                </div>
+                            </div>
+
+
+                            <!-- <div class="swiper-pagination"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- <div id="popup1" class="overlay"></div> -->
+
+    <div id="popup" class="container popup d-flex align-items-center py-3" style="bottom: 10%;">
+        <div class="row d-flex align-items-center">
+            <div class="tick col-md-1 col-sm-6">
+                <img src="assets/img/check.png" class="tickImage" style="display: inline-block;" alt="Check Symbol">
+            </div>
+            <div class="col-md-10 col-sm-10">
+                <div style="display: inline-block; margin-left: 1rem;">
+                    <p class="text-white fw-bold" style="margin-bottom: 0px;">Ürün Sepete Eklendi.</p>
+                    <img id="goToCartTick" src="assets/img/check.png" class="goToCartTick" alt="Check Symbol">
+                    <a id="addToCartText" class="text-secondary fw-bold" href="#"
+                        style="display: inline-block; text-decoration: none; cursor: pointer;">Sepete
+                        Git</a>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-2 d-flex align-items-center">
+                <a id="close" class="close" style="cursor: pointer; right: 1rem; bottom: 20%;" href="#">&times;
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="assets/js/initializeSwipe.js"></script>
+
+    <!-- Tab Effects -->
+    <script src="assets/js/tab_effects.js"></script>
+
+</body>
+
+</html>
